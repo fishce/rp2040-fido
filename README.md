@@ -1,6 +1,6 @@
-# Pico FIDO
+# RP2040 FIDO
 
-Firmware for Raspberry Pi Pico (RP2040) FIDO2/U2F security key, based on [pico-fido](https://github.com/polhenarejos/pico-fido).
+FIDO2/U2F security key firmware for RP2040-based boards, based on [pico-fido](https://github.com/polhenarejos/pico-fido).
 
 ## Features
 
@@ -9,6 +9,11 @@ Firmware for Raspberry Pi Pico (RP2040) FIDO2/U2F security key, based on [pico-f
 - Resident (discoverable) keys
 - Credential management
 - OTP, OATH applets
+
+## Supported Boards
+
+- Raspberry Pi Pico / Pico W
+- Any RP2040 board with USB and ≥1MB flash
 
 ## Requirements
 
@@ -26,7 +31,7 @@ sudo pacman -S cmake arm-none-eabi-gcc arm-none-eabi-newlib python
 Clone with submodules:
 
 ```bash
-git clone --recursive https://github.com/fishce/pico-fido.git
+git clone --recursive https://github.com/fishce/rp2040-fido.git
 ```
 
 Or fetch manually:
@@ -47,10 +52,10 @@ Output: `build/pico_fido.uf2`
 
 ## Flash
 
-1. Hold **BOOTSEL** button on the Pico
-2. Connect Pico to USB
+1. Hold **BOOTSEL** button on the board
+2. Connect to USB
 3. Copy `pico_fido.uf2` to the **RPI-RP2** drive
-4. Pico reboots automatically
+4. Board reboots automatically
 
 ## License
 
