@@ -1,0 +1,14 @@
+build/
+build_release/
+release/
+*.uf2
+*.elf
+*.bin
+*.hex
+*.dis
+*.map
+lib/
+pico-keys-sdk/
+.cmake/
+CMakeCache.txt
+CMakeFiles/
